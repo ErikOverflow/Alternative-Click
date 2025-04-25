@@ -58,10 +58,7 @@ public class AlternativeClickPlugin extends Plugin
 	@Subscribe
 	public void onGameStateChanged(GameStateChanged gameStateChanged)
 	{
-		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
-		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.click(), null);
-		}
+
 	}
 
 	@Provides
